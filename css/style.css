@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    header {
+    background: #1a6d1f; /* Green theme */
+    color: white;
+    padding: 1rem;
+    }
+    h1{
+        color: #ffffff;
+        font-size: 45px;
+    }
+    h2{
+        color: #0d3d12;
+    }
+    h2.popular{
+        text-align: center;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+    .nav-links {
+    display: flex;
+    list-style: none;
+}
+    .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+.btn {
+    display: inline-block;
+    background: #1a6d1f;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* Hero Section */
+.hero {
+    background: url('../images/resorts/hwange_1.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    }
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.hero h1, .hero p, .hero .btn{
+    position: relative;
+    z-index: 2;
+}
+ .resort-grid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+}
+.resort-card{
+      flex: 1 1 300px;
+      max-width: 350px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+
+}
+.resort-card:hover{
+    transform: translateY(-5px);
+}
+.resort-card-content{
+    text-align: center;
+    padding: 15px;
+}
+.resort-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.resort-card h3{
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #1a6d1f;
+    
+}
+.resort-card p{
+    margin: 0 0 15px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+.resort-card .btn{
+    display: inline-block;
+    background: #1a6d1f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.resort-card .btn:hover{
+    background: #145218;
+}
+
+.gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+        }
+.gallery-grid img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 5px;
+        }
+            
+
+      .site-footer {
+                background: #0d3d12; /* Dark green */
+                color: #fff;
+                padding: 40px 0 20px;
+                font-family: 'Arial', sans-serif;
+                }
+                .footer-content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                gap: 30px;
+                }
+                .footer-section {
+                flex: 1 1 250px;
+                margin-bottom: 20px;
+                text-align: center;
+                }
+                .footer-section h3 {
+                color: #e9c46a; /* Gold */
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                position: relative;
+                display: inline-block;
+                }
+                .footer-section h3::after {
+                content: '';
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                background: #e9c46a;
+                bottom: -5px;
+                left: 25%;
+        }
+.footer-links, .contact-info {
+            list-style: none;
+            padding: 0;
+            }
+            .footer-links li, .contact-info li {
+            margin-bottom: 10px;
+            }
+            .footer-links a, .contact-info a {
+            color: #d4edda; /* Light green */
+            text-decoration: none;
+            transition: color 0.3s;
+            }
+            .footer-links a:hover, .contact-info a:hover {
+            color: #e9c46a; /* Gold on hover */
+            }
+            .contact-info i {
+            margin-right: 8px;
+            color: #e9c46a;
+            width: 20px;
+            }
+            .social-links {
+            margin-top: 15px;
+            }
+            .social-links a {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+            transition: background 0.3s;
+            }
+            .social-links a:hover {
+            background: #e9c46a;
+            color: #0d3d12;
+    }
+    .copyright {
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
+        color: #aaa;
+        }
+    
+/* Accommodation Button */
+.btn-accommodation {
+    background: #2c7be5;
+    margin-right: 15px;
+    }
+    .btn-accommodation:hover {
+    background: #1a68d1;
+    }
+    .action-buttons {
+    margin: 30px 0;
+    display: flex;
+    }
+    /* Rating Stars */
+    .fa-star.rated {
+    color: #ffc107;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+    }
+    .btn-accommodation {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+}
